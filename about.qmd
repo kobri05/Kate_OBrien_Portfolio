@@ -2,8 +2,10 @@
 title: "About"
 ---
 
-About this site
+About Kate OBrien
 
 ```{r}
 1 + 1
 ```
+
+Hi, my name is Kate OBrien and I'm a current student in my second year at CSU Monterey Bay. I'm majoring in Marine Science, with a minor in data science. I'm passionate about conservation, and have a strong desire to protect our beautiful oceans and natural resources. I've also been an active scuba diver for nearly a year, and am currently in the process of getting my master diver certification.
