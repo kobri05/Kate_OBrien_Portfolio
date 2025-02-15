@@ -1,11 +1,26 @@
 ---
-title: "Kate_OBrien_Portfolio"
+title: "Kate OBrien"
+about:
+  template: jolla
+  image: portfolio_photo.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/katherine-obrien-5251982aa/
+    - icon: github
+      text: Github
+      href: https://github.com/kobri05
 ---
 
-This is a Quarto website.
+Kate O'Brien is a student of Marine Science with a minor in Data Science at \[California State University, Monterey Bay\](<https://csumb.edu/marinescience/>).
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Education
 
-```{r}
-1 + 1
-```
+California State University Monterey Bay \| Monterey, CA
+B.S. in Marine Science, Minor in Data Science \| 2023 - 2027
+
+## Experience
+
+El Torito \| Hostess \| November 2024 - present
+
+Starbucks \| Barista \| November 2021 - September 2023
