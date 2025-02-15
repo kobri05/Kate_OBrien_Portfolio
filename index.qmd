@@ -12,7 +12,7 @@ about:
       href: https://github.com/kobri05
 ---
 
-Kate O'Brien is a student of Marine Science with a minor in Data Science at \[California State University, Monterey Bay\](<https://csumb.edu/marinescience/>).
+Kate O'Brien is a student of Marine Science with a minor in Data Science at California State University, Monterey Bay (<https://csumb.edu/marinescience/>).
 
 ## Education
 
