@@ -1,0 +1,296 @@
+ParkName,SciName,Nativeness,CategoryName,Observations
+Joshua Tree National Park,Peucaea casinii,Native,Bird,0
+Joshua Tree National Park,Accipiter gentilis,Native,Bird,0
+Joshua Tree National Park,Buteo jamaicensis,Native,Bird,45
+Joshua Tree National Park,Buteo nitidus,Native,Bird,0
+Joshua Tree National Park,Buteo swainsoni,Native,Bird,4
+Joshua Tree National Park,Haliaeetus leucocephalus,Native,Bird,0
+Joshua Tree National Park,Gymnogyps californianus,Native,Bird,0
+Joshua Tree National Park,Anas acuta,Native,Bird,2
+Joshua Tree National Park,Anas crecca,Native,Bird,9
+Joshua Tree National Park,Anas platyrhynchos,Native,Bird,24
+Joshua Tree National Park,Aythya americana,Native,Bird,1
+Joshua Tree National Park,Branta bernicla,Native,Bird,0
+Joshua Tree National Park,Chen caerulescens,Native,Bird,2
+Joshua Tree National Park,Melanitta fusca,Native,Bird,1
+Joshua Tree National Park,Oxyura jamaicensis,Native,Bird,10
+Joshua Tree National Park,Archilochus alexandri,Native,Bird,7
+Joshua Tree National Park,Selasphorus,NA,Bird,0
+Joshua Tree National Park,Selasphorus sasin,Native,Bird,2
+Joshua Tree National Park,Chordeiles minor,Native,Bird,0
+Joshua Tree National Park,Charadrius vociferus,Native,Bird,16
+Joshua Tree National Park,Larus delawarensis,Native,Bird,0
+Joshua Tree National Park,Recurvirostra americana,Native,Bird,3
+Joshua Tree National Park,Calidris mauri,Native,Bird,1
+Joshua Tree National Park,Limnodromus scolopaceus,Native,Bird,1
+Joshua Tree National Park,Phalaropus tricolor,Native,Bird,3
+Joshua Tree National Park,Tringa semipalmata,Native,Bird,0
+Joshua Tree National Park,Columbina passerina,Native,Bird,2
+Joshua Tree National Park,Zenaida macroura,Native,Bird,90
+Joshua Tree National Park,Geococcyx californianus,Native,Bird,36
+Joshua Tree National Park,Falco peregrinus,Native,Bird,0
+Joshua Tree National Park,Callipepla gambelii,Native,Bird,76
+Joshua Tree National Park,Gavia immer,Native,Bird,2
+Joshua Tree National Park,Porzana carolina,Native,Bird,9
+Joshua Tree National Park,Eremophila alpestris,Native,Bird,15
+Joshua Tree National Park,Calcarius lapponicus,Native,Bird,0
+Joshua Tree National Park,Passerina caerulea,Native,Bird,3
+Joshua Tree National Park,Passerina versicolor,Native,Bird,0
+Joshua Tree National Park,Piranga ludoviciana,Native,Bird,71
+Joshua Tree National Park,Aphelocoma californica,Native,Bird,123
+Joshua Tree National Park,Gymnorhinus cyanocephalus,Native,Bird,44
+Joshua Tree National Park,Carpodacus mexicanus,Native,Bird,153
+Joshua Tree National Park,Loxia curvirostra,Native,Bird,1
+Joshua Tree National Park,Spinus psaltria,Native,Bird,82
+Joshua Tree National Park,Petrochelidon pyrrhonota,Native,Bird,13
+Joshua Tree National Park,Stelgidopteryx serripennis,Native,Bird,9
+Joshua Tree National Park,Agelaius phoeniceus,Native,Bird,19
+Joshua Tree National Park,Icterus bullockii,Native,Bird,32
+Joshua Tree National Park,Icterus parisorum,Native,Bird,73
+Joshua Tree National Park,Quiscalus mexicanus,Native,Bird,2
+Joshua Tree National Park,Lanius excubitor,Native,Bird,0
+Joshua Tree National Park,Mimus polyglottos,Native,Bird,48
+Joshua Tree National Park,Toxostoma crissale,Native,Bird,0
+Joshua Tree National Park,Toxostoma rufum,Native,Bird,2
+Joshua Tree National Park,Baeolophus inornatus,Native,Bird,74
+Joshua Tree National Park,Cardellina pusilla,Native,Bird,101
+Joshua Tree National Park,Geothlypis tolmiei,Native,Bird,45
+Joshua Tree National Park,Mniotilta varia,Native,Bird,2
+Joshua Tree National Park,Oreothlypis celata,Native,Bird,64
+Joshua Tree National Park,Oreothlypis ruficapilla,Native,Bird,38
+Joshua Tree National Park,Parkesia noveboracensis,Native,Bird,0
+Joshua Tree National Park,Setophaga citrina,Native,Bird,1
+Joshua Tree National Park,Setophaga palmarum,Native,Bird,0
+Joshua Tree National Park,Setophaga ruticilla,Native,Bird,4
+Joshua Tree National Park,Setophaga townsendi,Native,Bird,38
+Joshua Tree National Park,Amphispiza belli,Native,Bird,32
+Joshua Tree National Park,Chondestes grammacus,Native,Bird,8
+Joshua Tree National Park,Melospiza melodia,Native,Bird,13
+Joshua Tree National Park,Passerculus sandwichensis,Native,Bird,16
+Joshua Tree National Park,Pipilo maculatus,Native,Bird,95
+Joshua Tree National Park,Spizella breweri,Native,Bird,53
+Joshua Tree National Park,Zonotrichia atricapilla,Native,Bird,14
+Joshua Tree National Park,Passer domesticus,Non-native,Bird,6
+Joshua Tree National Park,Phainopepla nitens,Native,Bird,67
+Joshua Tree National Park,Auriparus flaviceps,Native,Bird,70
+Joshua Tree National Park,Sitta pygmaea,Native,Bird,8
+Joshua Tree National Park,Catherpes mexicanus,Native,Bird,61
+Joshua Tree National Park,Thryomanes bewickii,Native,Bird,115
+Joshua Tree National Park,Catharus guttatus,Native,Bird,45
+Joshua Tree National Park,Myadestes townsendi,Native,Bird,26
+Joshua Tree National Park,Turdus migratorius,Native,Bird,40
+Joshua Tree National Park,Contopus sordidulus,Native,Bird,36
+Joshua Tree National Park,Empidonax minimus,Native,Bird,0
+Joshua Tree National Park,Empidonax wrightii,Native,Bird,13
+Joshua Tree National Park,Myiarchus tyrannulus,Native,Bird,0
+Joshua Tree National Park,Sayornis saya,Native,Bird,50
+Joshua Tree National Park,Vireo bellii,Native,Bird,2
+Joshua Tree National Park,Vireo huttoni,Native,Bird,3
+Joshua Tree National Park,Ardea herodias,Native,Bird,4
+Joshua Tree National Park,Butorides virescens,Native,Bird,11
+Joshua Tree National Park,Ixobrychus exilis,Native,Bird,0
+Joshua Tree National Park,Pelecanus occidentalis,Native,Bird,0
+Joshua Tree National Park,Colaptes auratus,Native,Bird,45
+Joshua Tree National Park,Melanerpes formicivorus,Native,Bird,9
+Joshua Tree National Park,Picoides albolarvatus,Native,Bird,2
+Joshua Tree National Park,Picoides scalaris,Native,Bird,107
+Joshua Tree National Park,Sphyrapicus ruber,Native,Bird,1
+Joshua Tree National Park,Aechmophorus occidentalis,Native,Bird,1
+Joshua Tree National Park,Podilymbus podiceps,Native,Bird,23
+Joshua Tree National Park,Asio otus,Native,Bird,9
+Joshua Tree National Park,Megascops kennicottii,Native,Bird,34
+Joshua Tree National Park,Phalacrocorax auritus,Native,Bird,0
+Olympic National Park,Accipiter cooperii,Native,Bird,9
+Olympic National Park,Aquila chrysaetos,Native,Bird,20
+Olympic National Park,Buteo platypterus,Native,Bird,0
+Olympic National Park,Haliaeetus leucocephalus,Native,Bird,29
+Olympic National Park,Aix sponsa,Native,Bird,9
+Olympic National Park,Anas clypeata,Native,Bird,2
+Olympic National Park,Anas discors,Native,Bird,2
+Olympic National Park,Anas strepera,Native,Bird,2
+Olympic National Park,Aythya americana,Native,Bird,1
+Olympic National Park,Aythya valisineria,Native,Bird,1
+Olympic National Park,Branta hutchinsii,Native,Bird,0
+Olympic National Park,Bucephala islandica,Native,Bird,14
+Olympic National Park,Cygnus buccinator,Native,Bird,4
+Olympic National Park,Lophodytes cucullatus,Native,Bird,9
+Olympic National Park,Melanitta perspicillata,Native,Bird,13
+Olympic National Park,Oxyura jamaicensis,Native,Bird,1
+Olympic National Park,Calypte anna,Native,Bird,0
+Olympic National Park,Aethia psittacula,Native,Bird,0
+Olympic National Park,Cerorhinca monocerata,Native,Bird,4
+Olympic National Park,Ptychoramphus aleuticus,Native,Bird,1
+Olympic National Park,Uria aalge,Native,Bird,8
+Olympic National Park,Charadrius semipalmatus,Native,Bird,3
+Olympic National Park,Pluvialis fulva,Native,Bird,1
+Olympic National Park,Hydroprogne caspia,Native,Bird,10
+Olympic National Park,Larus canus,Native,Bird,3
+Olympic National Park,Larus heermanni,Native,Bird,5
+Olympic National Park,Larus occidentalis,Native,Bird,5
+Olympic National Park,Larus pipixcan,Native,Bird,0
+Olympic National Park,Leucophaeus atricilla,Native,Bird,1
+Olympic National Park,Sterna hirundo,Native,Bird,0
+Olympic National Park,Xema sabini,Native,Bird,0
+Olympic National Park,Aphriza virgata,Native,Bird,2
+Olympic National Park,Calidris acuminata,Native,Bird,0
+Olympic National Park,Calidris bairdii,Native,Bird,3
+Olympic National Park,Calidris mauri,Native,Bird,9
+Olympic National Park,Calidris ptilocnemis,Native,Bird,1
+Olympic National Park,Catoptrophorus semipalmatus,Native,Bird,0
+Olympic National Park,Limnodromus griseus,Native,Bird,0
+Olympic National Park,Limosa lapponica,Native,Bird,0
+Olympic National Park,Phalaropus fulicaria,Native,Bird,1
+Olympic National Park,Tringa flavipes,Native,Bird,2
+Olympic National Park,Tryngites subruficollis,Native,Bird,0
+Olympic National Park,Stercorarius pomarinus,Native,Bird,1
+Olympic National Park,Streptopelia decaocto,Non-native,Bird,3
+Olympic National Park,Falco columbarius columbarius,Native,Bird,0
+Olympic National Park,Falco peregrinus,Native,Bird,12
+Olympic National Park,Callipepla californica,Native,Bird,2
+Olympic National Park,Dendragapus obscurus,Native,Bird,79
+Olympic National Park,Gavia immer,Native,Bird,12
+Olympic National Park,Grus canadensis,Native,Bird,3
+Olympic National Park,Rallus limicola,Native,Bird,4
+Olympic National Park,Bombycilla cedrorum,Native,Bird,24
+Olympic National Park,Plectrophenax nivalis,Native,Bird,0
+Olympic National Park,Pheucticus melanocephalus,Native,Bird,16
+Olympic National Park,Cinclus mexicanus,Native,Bird,42
+Olympic National Park,Corvus corax,Native,Bird,85
+Olympic National Park,Perisoreus canadensis obscurus,Native,Bird,85
+Olympic National Park,Carduelis tristis,Native,Bird,4
+Olympic National Park,Carpodacus purpureus,Native,Bird,22
+Olympic National Park,Loxia curvirostra,Native,Bird,57
+Olympic National Park,Hirundo rustica,Native,Bird,27
+Olympic National Park,Riparia riparia,Native,Bird,0
+Olympic National Park,Tachycineta thalassina,Native,Bird,39
+Olympic National Park,Icterus galbula,Native,Bird,1
+Olympic National Park,Xanthocephalus xanthocephalus,Native,Bird,1
+Olympic National Park,Anthus rubescens,Native,Bird,56
+Olympic National Park,Poecile rufescens,Native,Bird,87
+Olympic National Park,Dendroica coronata coronata,Native,Bird,0
+Olympic National Park,Dendroica palmarum,Native,Bird,0
+Olympic National Park,Geothlypis trichas,Native,Bird,17
+Olympic National Park,Setophaga ruticilla,Native,Bird,0
+Olympic National Park,Vermivora ruficapilla,Native,Bird,0
+Olympic National Park,Melospiza georgiana,Native,Bird,1
+Olympic National Park,Passerculus sandwichensis,Native,Bird,17
+Olympic National Park,Pooecetes gramineus,Native,Bird,1
+Olympic National Park,Zonotrichia atricapilla,Native,Bird,22
+Olympic National Park,Passer domesticus,Non-native,Bird,0
+Olympic National Park,Sitta canadensis,Native,Bird,72
+Olympic National Park,Cistothorus palustris,Native,Bird,6
+Olympic National Park,Troglodytes aedon,Native,Bird,3
+Olympic National Park,Catharus ustulatus,Native,Bird,29
+Olympic National Park,Sialia currucoides,Native,Bird,0
+Olympic National Park,Contopus cooperi,Native,Bird,45
+Olympic National Park,Empidonax hammondii,Native,Bird,74
+Olympic National Park,Empidonax wrightii,Native,Bird,0
+Olympic National Park,Tyrannus tyrannus,Native,Bird,2
+Olympic National Park,Vireo gilvus,Native,Bird,41
+Olympic National Park,Ardea herodias,Native,Bird,21
+Olympic National Park,Butorides virescens,Native,Bird,3
+Olympic National Park,Pelecanus erythrorhynchos,Native,Bird,1
+Olympic National Park,Dryocopus pileatus,Native,Bird,41
+Olympic National Park,Picoides arcticus,Native,Bird,0
+Olympic National Park,Picoides villosus,Native,Bird,61
+Olympic National Park,Aechmophorus occidentalis,Native,Bird,14
+Olympic National Park,Podiceps nigricollis,Native,Bird,0
+Olympic National Park,Diomedea nigripes,Native,Bird,0
+Olympic National Park,Fulmarus glacialis,Native,Bird,0
+Olympic National Park,Puffinus carneipes,Native,Bird,0
+Olympic National Park,Puffinus puffinus,Native,Bird,0
+Olympic National Park,Asio flammeus,Native,Bird,1
+Olympic National Park,Bubo virginianus,Native,Bird,3
+Olympic National Park,Otus kennicottii,Native,Bird,6
+Olympic National Park,Tyto alba,Native,Bird,1
+Olympic National Park,Phalacrocorax penicillatus,Native,Bird,0
+Yosemite National Park,Accipiter gentilis,Native,Bird,144
+Yosemite National Park,Buteo jamaicensis,Native,Bird,155
+Yosemite National Park,Buteo regalis,Native,Bird,1
+Yosemite National Park,Elanus leucurus,Native,Bird,2
+Yosemite National Park,Gymnogyps californianus,Native,Bird,1
+Yosemite National Park,Anas acuta,Native,Bird,5
+Yosemite National Park,Anas crecca,Native,Bird,7
+Yosemite National Park,Anas platyrhynchos,Native,Bird,171
+Yosemite National Park,Aythya collaris,Native,Bird,26
+Yosemite National Park,Bucephala albeola,Native,Bird,15
+Yosemite National Park,Chen caerulescens,Native,Bird,6
+Yosemite National Park,Lophodytes cucullatus,Native,Bird,3
+Yosemite National Park,Selasphorus calliope,Native,Bird,74
+Yosemite National Park,Cypseloides niger,Native,Bird,21
+Yosemite National Park,Selasphorus platycercus,Native,Bird,0
+Yosemite National Park,Chordeiles minor,Native,Bird,15
+Yosemite National Park,Hydroprogne caspia,Non-native,Bird,1
+Yosemite National Park,Himantopus mexicanus,Native,Bird,0
+Yosemite National Park,Calidris minutilla,Native,Bird,0
+Yosemite National Park,Phalaropus lobatus,Native,Bird,2
+Yosemite National Park,Tringa semipalmata,Native,Bird,0
+Yosemite National Park,Patagioenas fasciata,Native,Bird,90
+Yosemite National Park,Megaceryle alcyon,Native,Bird,69
+Yosemite National Park,Falco mexicanus,Native,Bird,52
+Yosemite National Park,Callipepla californica,Native,Bird,29
+Yosemite National Park,Dendragapus fuliginosus,Native,Bird,222
+Yosemite National Park,Gavia immer,Native,Bird,1
+Yosemite National Park,Coturnicops noveboracensis,Native,Bird,1
+Yosemite National Park,Rallus limicola,Native,Bird,4
+Yosemite National Park,Psaltriparus minimus,Native,Bird,60
+Yosemite National Park,Bombycilla garrulus,Native,Bird,2
+Yosemite National Park,Passerina caerulea,Native,Bird,0
+Yosemite National Park,Pheucticus melanocephalus,Native,Bird,373
+Yosemite National Park,Cinclus mexicanus,Native,Bird,85
+Yosemite National Park,Corvus corax,Unknown,Bird,141
+Yosemite National Park,Nucifraga columbiana,Native,Bird,376
+Yosemite National Park,Artemisiospiza belli,Native,Bird,3
+Yosemite National Park,Leucosticte tephrocotis,Native,Bird,41
+Yosemite National Park,Spinus lawrencei,Native,Bird,22
+Yosemite National Park,Spinus tristis,Native,Bird,18
+Yosemite National Park,Riparia riparia,Native,Bird,0
+Yosemite National Park,Tachycineta thalassina,Native,Bird,78
+Yosemite National Park,Euphagus cyanocephalus,Native,Bird,187
+Yosemite National Park,Molothrus ater,Non-native,Bird,74
+Yosemite National Park,Xanthocephalus xanthocephalus,Native,Bird,21
+Yosemite National Park,Dumetella carolinensis,Non-native,Bird,2
+Yosemite National Park,Toxostoma redivivum,Native,Bird,2
+Yosemite National Park,Poecile gambeli,Native,Bird,1071
+Yosemite National Park,Geothlypis tolmiei,Native,Bird,270
+Yosemite National Park,Mniotilta varia,Native,Bird,0
+Yosemite National Park,Oreothlypis peregrina,Native,Bird,2
+Yosemite National Park,Seiurus aurocapilla,Unknown,Bird,0
+Yosemite National Park,Setophaga citrina,Non-native,Bird,2
+Yosemite National Park,Setophaga magnolia,Native,Bird,0
+Yosemite National Park,Setophaga palmarum,Unknown,Bird,1
+Yosemite National Park,Setophaga striata,Native,Bird,0
+Yosemite National Park,Ammodramus savannarum,Native,Bird,0
+Yosemite National Park,Junco hyemalis caniceps,Unknown,Bird,0
+Yosemite National Park,Melospiza lincolnii,Native,Bird,121
+Yosemite National Park,Passerculus sandwichensis,Native,Bird,7
+Yosemite National Park,Pipilo maculatus,Native,Bird,267
+Yosemite National Park,Spizella breweri,Native,Bird,1
+Yosemite National Park,Zonotrichia albicollis,Native,Bird,0
+Yosemite National Park,Zonotrichia leucophrys oriantha,Native,Bird,188
+Yosemite National Park,Polioptila caerulea,Native,Bird,26
+Yosemite National Park,Regulus satrapa,Native,Bird,569
+Yosemite National Park,Sitta pygmaea,Native,Bird,6
+Yosemite National Park,Catherpes mexicanus,Native,Bird,40
+Yosemite National Park,Thryomanes bewickii,Native,Bird,42
+Yosemite National Park,Catharus guttatus,Native,Bird,381
+Yosemite National Park,Myadestes townsendi,Native,Bird,358
+Yosemite National Park,Turdus migratorius,Native,Bird,599
+Yosemite National Park,Empidonax difficilis,Native,Bird,105
+Yosemite National Park,Empidonax traillii,Native,Bird,70
+Yosemite National Park,Pyrocephalus rubinus,Non-native,Bird,1
+Yosemite National Park,Tyrannus tyrannus,Unknown,Bird,0
+Yosemite National Park,Vireo gilvus,Native,Bird,268
+Yosemite National Park,Ardea alba,Native,Bird,7
+Yosemite National Park,Butorides virescens,Unknown,Bird,0
+Yosemite National Park,Pelecanus erythrorhynchos,Native,Bird,10
+Yosemite National Park,Colaptes auratus,Native,Bird,332
+Yosemite National Park,Melanerpes lewis,Native,Bird,14
+Yosemite National Park,Picoides nuttallii,Native,Bird,15
+Yosemite National Park,Sphyrapicus nuchalis,Native,Bird,2
+Yosemite National Park,Aechmophorus clarkii,Native,Bird,0
+Yosemite National Park,Podiceps nigricollis,Native,Bird,29
+Yosemite National Park,Asio flammeus,Unknown,Bird,1
+Yosemite National Park,Bubo virginianus,Native,Bird,79
+Yosemite National Park,Otus flammeolus,Native,Bird,3
+Yosemite National Park,Tyto alba,Native,Bird,4

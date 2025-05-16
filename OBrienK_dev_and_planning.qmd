@@ -1,0 +1,175 @@
+---
+title: "Portfolio Development and Planning"
+author: "Kate OBrien"
+format: html
+---
+
+## Dataset
+
+https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-10-08/readme.md#most_visited_nps_species_datacsv
+
+```{r}
+nps_species_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2024/2024-10-08/most_visited_nps_species_data.csv')
+```
+
+## Data Description
+
+My chosen dataset describes species in the most visited national parks in the US.
+
+Variables and Types: ParkCode- character ParkName- character CategoryName- character Order- character Family- character TaxonRecordStatus- character SciName- character CommonNames- character Synonyms- character ParkAccepted- logical Sensitive- logical RecordStatus- character Occurrence- character OccurenceTags- character Nativeness- character NativenessTags- character Abundance- character NPSTags- character ParkTags- character References- doouble Observations- double Vouchers- double ExternalLinks- character TEStatus- character StateStatus- character OzoneSensitiveStatus- character GRank- character SRank- character
+
+The research question I want to answer is "What is the relationship between sensitive native species and invasive non-native species?
+
+## Data Visualizations
+
+For my visualizations, I'd like to have a comparative scatter chart for a few select national parks to visualize the number of sensitive native species compared to the number of invasive, non-native species. I would also like to create a visualization that demonstrates potential changes in concentrations of native species in each NP overtime. I may need to find additional data about species sightings in national parks by year.
+
+##Data Cleaning Do you need to reformat any variables into different types (e.g. factors, time, dates, strings)? Or remove information from variable values? \> No
+
+Do you need to deal with any missing data, especially missing data coded other than NA? \> Yes
+
+Do you need to filter your data? How? \> Yes, by national park, status, and nativeness
+
+Do you need to create any new variables? What variables? How? \> I likely won't unless I find a dataset with observations by year
+
+Do you need to add new data (join) to your data? What data? How? \> Yes, I'd like to find a dataset with species observations in national parks by year
+
+Are there any variables you can exclude from your data? \> Yes there are several.
+
+Do you need pivot your data in any way? Why? How? \> I don't believe so
+
+Do you need to summarize any of the variables? Which ones? How? \> I might need to summarize species totals
+
+What other aspects of your data need to be “fixed” in order to make your data visualizations? \> I think I may need to filter my data down to mammals or pick a group to focus on
+
+```{r}
+library(tidyverse)
+```
+
+## Data Cleaning
+
+```{r}
+olym_np_obs <- read_csv("data/olym_np_observations.csv")
+joshtree_np_obs <- read_csv("data/joshua_tree_np_observations.csv")
+yosemite_np_obs <- read_csv("data/yosemite_np_obs.csv")
+```
+
+```{r}
+#| label: Cleaning NPS Species Data
+#nps_species_data |>
+#count(ParkName) #helping me figure out which parks I wanna focus on
+
+
+#nps_species_clean <- nps_species_data |>
+ # select(c(ParkName, 
+  #         SciName, 
+   #        Nativeness, 
+    #       CategoryName, 
+     #      Observations)) |>
+  #filter(CategoryName == "Bird") |> #choosing to focus on birds for this project; going to join a dataset from iNaturalist about observations in specific NPs
+  #filter(ParkName == c("Olympic National Park", "Yosemite National Park", "Joshua Tree National Park"))  #Chose 3 NPs to focus on
+#write_csv(nps_species_clean, file = "nps_species_clean.csv")
+nps_species_clean <- read_csv("data/nps_species_clean.csv")
+
+```
+
+# Building Observations Dataset
+
+```{r}
+#| label: Ensuring Obs Datasets Match
+olym_np_obs <- olym_np_obs |>
+  select(-time_observed_at)
+
+#yosemite_np_obs <- yosemite_np_obs |>
+  #select(-taxon_id)
+olym_np_obs <- olym_np_obs |>
+  mutate(observed_in = "Olympic National Park") |>
+  #select(-time_observed_at) |>
+  select(-iconic_taxon_name)
+
+joshtree_np_obs <- joshtree_np_obs |>
+  mutate(observed_in = "Joshua Tree National Park") |>
+  select(-time_observed_at)
+
+yosemite_np_obs <- yosemite_np_obs |>
+  mutate(observed_in = "Yosemite National Park") |>
+  select(-user_login)
+#All observation data taken from iNaturalist!
+```
+
+## Putting Obs Datasets Together
+
+```{r}
+np_observations <- rows_insert(joshtree_np_obs, 
+                               olym_np_obs)
+np_observations <- rows_insert(np_observations, 
+                               yosemite_np_obs)
+write_csv(np_observations, file = "np_observations.csv")
+```
+
+## extract year
+
+```{r}
+np_obs <- read_csv('np_observations.csv')
+
+np_obs_year <- np_obs |>
+  mutate(observed_on = ymd(observed_on)) |>
+  mutate(year = year(observed_on))
+```
+
+## joining np obs with np species
+
+```{r}
+nps_species_clean <- read_csv("data/nps_species_clean.csv")
+
+nps_species_obs <- inner_join(np_obs_year, nps_species_clean, join_by(scientific_name == SciName))
+```
+
+```{r}
+#| label: Get rid of unnecessary variables
+nps_species_clean <- nps_species_clean |>
+  select(-CategoryName)
+
+nps_species_clean %>% 
+  filter(str_detect(ParkName, "Yosemite")) %>% 
+  count(SciName)
+
+np_obs_year %>% 
+   filter(str_detect(observed_in, "Yosemite")) %>% 
+  count(scientific_name)
+
+np_species_obs <- np_obs_year |>
+  left_join(nps_species_clean, 
+            by = c("scientific_name" = "SciName",
+                   "observed_in" = "ParkName"))
+
+```
+
+## Visual #1
+
+```{r}
+np_species_obs |>
+  group_by(Nativeness, year, observed_in) |>
+  summarise(total_observations = sum(Observations, na.rm = TRUE)) |>
+  ggplot(mapping = aes(x = year, 
+                       y = total_observations,
+                       fill = Nativeness)) +
+  geom_col() +
+  facet_wrap(~observed_in, ncol = 1, scale = "free") +
+  labs(title = "Observations of Native vs. Non-Native Bird Species in Olympic, Yosemite, and Joshua Tree National Park") +
+  xlab("Year Observed") +
+  ylab("Number of Observations")
+ggsave("bar_plot_obs.png", device = png)
+```
+
+## Visual #2
+
+```{r}
+np_species_obs |>
+  group_by(Nativeness)
+  mutate(sum_nativeness = sum(Nativeness, na.rm = TRUE))
+  ggplot(mapping = aes(x = year, 
+                       y= , 
+                       colour = Nativeness)) +
+  geom_point()
+```
