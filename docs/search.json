@@ -26,5 +26,75 @@
     "title": "About",
     "section": "",
     "text": "Hi, my name is Kate OBrien and I’m a current student in my second year at CSU Monterey Bay. I’m majoring in Marine Science, with a minor in data science. I’m passionate about conservation, and have a strong desire to protect our beautiful oceans and natural resources. I’ve also been an active scuba diver for nearly a year, and am currently in the process of getting my master diver certification."
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html",
+    "title": "Portfolio Development and Planning",
+    "section": "",
+    "text": "https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-10-08/readme.md#most_visited_nps_species_datacsv\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 61119 Columns: 28\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (21): ParkCode, ParkName, CategoryName, Order, Family, TaxonRecordStatus...\ndbl  (3): References, Observations, Vouchers\nlgl  (4): Synonyms, ParkAccepted, Sensitive, ExternalLinks\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#dataset",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#dataset",
+    "title": "Portfolio Development and Planning",
+    "section": "",
+    "text": "https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-10-08/readme.md#most_visited_nps_species_datacsv\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 61119 Columns: 28\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (21): ParkCode, ParkName, CategoryName, Order, Family, TaxonRecordStatus...\ndbl  (3): References, Observations, Vouchers\nlgl  (4): Synonyms, ParkAccepted, Sensitive, ExternalLinks\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#data-description",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#data-description",
+    "title": "Portfolio Development and Planning",
+    "section": "Data Description",
+    "text": "Data Description\nMy chosen dataset describes species in the most visited national parks in the US.\nVariables and Types: ParkCode- character ParkName- character CategoryName- character Order- character Family- character TaxonRecordStatus- character SciName- character CommonNames- character Synonyms- character ParkAccepted- logical Sensitive- logical RecordStatus- character Occurrence- character OccurenceTags- character Nativeness- character NativenessTags- character Abundance- character NPSTags- character ParkTags- character References- doouble Observations- double Vouchers- double ExternalLinks- character TEStatus- character StateStatus- character OzoneSensitiveStatus- character GRank- character SRank- character\nThe research question I want to answer is “What is the relationship between sensitive native species and invasive non-native species?"
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#data-visualizations",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#data-visualizations",
+    "title": "Portfolio Development and Planning",
+    "section": "Data Visualizations",
+    "text": "Data Visualizations\nFor my visualizations, I’d like to have a comparative scatter chart for a few select national parks to visualize the number of sensitive native species compared to the number of invasive, non-native species. I would also like to create a visualization that demonstrates potential changes in concentrations of native species in each NP overtime. I may need to find additional data about species sightings in national parks by year.\n##Data Cleaning Do you need to reformat any variables into different types (e.g. factors, time, dates, strings)? Or remove information from variable values? &gt; No\nDo you need to deal with any missing data, especially missing data coded other than NA? &gt; Yes\nDo you need to filter your data? How? &gt; Yes, by national park, status, and nativeness\nDo you need to create any new variables? What variables? How? &gt; I likely won’t unless I find a dataset with observations by year\nDo you need to add new data (join) to your data? What data? How? &gt; Yes, I’d like to find a dataset with species observations in national parks by year\nAre there any variables you can exclude from your data? &gt; Yes there are several.\nDo you need pivot your data in any way? Why? How? &gt; I don’t believe so\nDo you need to summarize any of the variables? Which ones? How? &gt; I might need to summarize species totals\nWhat other aspects of your data need to be “fixed” in order to make your data visualizations? &gt; I think I may need to filter my data down to mammals or pick a group to focus on\n\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors"
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#data-cleaning",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#data-cleaning",
+    "title": "Portfolio Development and Planning",
+    "section": "Data Cleaning",
+    "text": "Data Cleaning\n\n\nRows: 4128 Columns: 7\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (5): observed_on_string, time_observed_at, scientific_name, common_name...\ndbl  (1): id\ndate (1): observed_on\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 8279 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (4): observed_on_string, time_observed_at, scientific_name, common_name\ndbl  (1): id\ndate (1): observed_on\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\nRows: 9223 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (4): observed_on_string, user_login, scientific_name, common_name\ndbl  (1): id\ndate (1): observed_on\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\n\n\nRows: 295 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): ParkName, SciName, Nativeness, CategoryName\ndbl (1): Observations\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#putting-obs-datasets-together",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#putting-obs-datasets-together",
+    "title": "Portfolio Development and Planning",
+    "section": "Putting Obs Datasets Together",
+    "text": "Putting Obs Datasets Together\n\n\nMatching, by = \"id\"\nMatching, by = \"id\""
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#extract-year",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#extract-year",
+    "title": "Portfolio Development and Planning",
+    "section": "extract year",
+    "text": "extract year\n\n\nRows: 21630 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr  (4): observed_on_string, scientific_name, common_name, observed_in\ndbl  (1): id\ndate (1): observed_on\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#joining-np-obs-with-np-species",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#joining-np-obs-with-np-species",
+    "title": "Portfolio Development and Planning",
+    "section": "joining np obs with np species",
+    "text": "joining np obs with np species\n\n\nRows: 295 Columns: 5\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): ParkName, SciName, Nativeness, CategoryName\ndbl (1): Observations\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nWarning in inner_join(np_obs_year, nps_species_clean, join_by(scientific_name == : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 18 of `x` matches multiple rows in `y`.\nℹ Row 118 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning.\n\n\n\n\n# A tibble: 90 × 2\n   SciName                   n\n   &lt;chr&gt;                 &lt;int&gt;\n 1 Accipiter gentilis        1\n 2 Aechmophorus clarkii      1\n 3 Ammodramus savannarum     1\n 4 Anas acuta                1\n 5 Anas crecca               1\n 6 Anas platyrhynchos        1\n 7 Ardea alba                1\n 8 Artemisiospiza belli      1\n 9 Asio flammeus             1\n10 Aythya collaris           1\n# ℹ 80 more rows\n\n\n# A tibble: 199 × 2\n   scientific_name                   n\n   &lt;chr&gt;                         &lt;int&gt;\n 1 Accipiter striatus                7\n 2 Actitis macularius               49\n 3 Aegolius acadicus                 4\n 4 Aeronautes saxatalis             27\n 5 Agelaius phoeniceus             110\n 6 Agelaius tricolor                 1\n 7 Aix sponsa                       76\n 8 Anas crecca                       6\n 9 Anas platyrhynchos              186\n10 Anas platyrhynchos domesticus     1\n# ℹ 189 more rows"
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#visual-1",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#visual-1",
+    "title": "Portfolio Development and Planning",
+    "section": "Visual #1",
+    "text": "Visual #1\n\n\n`summarise()` has grouped output by 'Nativeness', 'year'. You can override\nusing the `.groups` argument.\n\n\n\n\n\n\n\n\n\nSaving 7 x 5 in image"
+  },
+  {
+    "objectID": "portfolio_project/OBrienK_dev_and_planning.html#visual-2",
+    "href": "portfolio_project/OBrienK_dev_and_planning.html#visual-2",
+    "title": "Portfolio Development and Planning",
+    "section": "Visual #2",
+    "text": "Visual #2"
   }
 ]

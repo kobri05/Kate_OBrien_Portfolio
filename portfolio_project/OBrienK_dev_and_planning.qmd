@@ -2,6 +2,7 @@
 title: "Portfolio Development and Planning"
 author: "Kate OBrien"
 format: html
+echo: false
 ---
 
 ## Dataset
@@ -165,11 +166,5 @@ ggsave("bar_plot_obs.png", device = png)
 ## Visual #2
 
 ```{r}
-np_species_obs |>
-  group_by(Nativeness)
-  mutate(sum_nativeness = sum(Nativeness, na.rm = TRUE))
-  ggplot(mapping = aes(x = year, 
-                       y= , 
-                       colour = Nativeness)) +
-  geom_point()
+
 ```
