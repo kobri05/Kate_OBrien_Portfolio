@@ -11,7 +11,7 @@ website:
       - href: about.qmd
         text: "About Me"
       - href: OBrienK_dev_and_planning.qmd
-        text: "Portfolio Project"
+        text: "portfolio_project/Portfolio Project"
 format:
   html:
     theme: lumen
