@@ -10,8 +10,8 @@ website:
         text: "Home"
       - href: about.qmd
         text: "About Me"
-      - href: OBrienK_dev_and_planning.qmd
-        text: "portfolio_project/Portfolio Project"
+      - href: portfolio_project/OBrienK_dev_and_planning.qmd
+        text: "Portfolio Project"
 format:
   html:
     theme: lumen
