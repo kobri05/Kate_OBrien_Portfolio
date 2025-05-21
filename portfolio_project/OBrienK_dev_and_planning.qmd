@@ -3,6 +3,9 @@ title: "Portfolio Development and Planning"
 author: "Kate OBrien"
 format: html
 echo: false
+message: false
+warning: false
+results: false
 ---
 
 ## Dataset
@@ -25,29 +28,17 @@ The research question I want to answer is "What is the relationship between sens
 
 For my visualizations, I'd like to have a comparative scatter chart for a few select national parks to visualize the number of sensitive native species compared to the number of invasive, non-native species. I would also like to create a visualization that demonstrates potential changes in concentrations of native species in each NP overtime. I may need to find additional data about species sightings in national parks by year.
 
-##Data Cleaning Do you need to reformat any variables into different types (e.g. factors, time, dates, strings)? Or remove information from variable values? \> No
 
-Do you need to deal with any missing data, especially missing data coded other than NA? \> Yes
-
-Do you need to filter your data? How? \> Yes, by national park, status, and nativeness
-
-Do you need to create any new variables? What variables? How? \> I likely won't unless I find a dataset with observations by year
-
-Do you need to add new data (join) to your data? What data? How? \> Yes, I'd like to find a dataset with species observations in national parks by year
-
-Are there any variables you can exclude from your data? \> Yes there are several.
-
-Do you need pivot your data in any way? Why? How? \> I don't believe so
-
-Do you need to summarize any of the variables? Which ones? How? \> I might need to summarize species totals
-
-What other aspects of your data need to be “fixed” in order to make your data visualizations? \> I think I may need to filter my data down to mammals or pick a group to focus on
 
 ```{r}
 library(tidyverse)
 ```
 
 ## Data Cleaning
+
+Here, I made sure to load in all of my observations datasets from Olympic, Joshua Tree, and Yosemite National Parks. I was a little bit careless in installation and had a couple extra variables in some of the sets that I didn't need, and in order to join the rows onto each other, I needed each dataset to have the same variables. I made sure to select the variables I wanted to use so that my observations sets were clean.
+
+After that, I needed to make sure each observations data set had a variable that indicated which park is observed in, so I mutated the data to add a variable with where the observation was made. Once I had that variable, I joined all the datasets together and made one giant observations set.
 
 ```{r}
 olym_np_obs <- read_csv("data/olym_np_observations.csv")
@@ -98,7 +89,7 @@ yosemite_np_obs <- yosemite_np_obs |>
 #All observation data taken from iNaturalist!
 ```
 
-## Putting Obs Datasets Together
+
 
 ```{r}
 np_observations <- rows_insert(joshtree_np_obs, 
@@ -108,7 +99,7 @@ np_observations <- rows_insert(np_observations,
 write_csv(np_observations, file = "np_observations.csv")
 ```
 
-## extract year
+
 
 ```{r}
 np_obs <- read_csv('np_observations.csv')
@@ -118,7 +109,6 @@ np_obs_year <- np_obs |>
   mutate(year = year(observed_on))
 ```
 
-## joining np obs with np species
 
 ```{r}
 nps_species_clean <- read_csv("data/nps_species_clean.csv")
@@ -145,13 +135,20 @@ np_species_obs <- np_obs_year |>
                    "observed_in" = "ParkName"))
 
 ```
+# Building Visuals
 
 ## Visual #1
 
+This visual is a comparison of the observations made of Native vs. Non native species in each park. My hypothesis was that as the number of non-native species goes up, the number of native species observations would go down. This may have been a more effective test on plants, or something similar, however, as birds are highly migratory and may not be classified as native or non-native.
+
 ```{r}
 np_species_obs |>
-  group_by(Nativeness, year, observed_in) |>
-  summarise(total_observations = sum(Observations, na.rm = TRUE)) |>
+  group_by(Nativeness, 
+           year, 
+           observed_in) |>
+  summarise(total_observations = 
+              sum(Observations, 
+                  na.rm = TRUE)) |>
   ggplot(mapping = aes(x = year, 
                        y = total_observations,
                        fill = Nativeness)) +
@@ -165,6 +162,23 @@ ggsave("bar_plot_obs.png", device = png)
 
 ## Visual #2
 
-```{r}
+After noticing how many 'unknowns' there were in my Nativeness variable, I wanted to make a visual illustrating where the NA values were in the data, maybe to gain a better understanding of what might've happened in data collection. Maybe in recent years, there have been more sightings of various species in the parks with changing climates, but further analysis would be required to determine.
 
+```{r}
+np_species_obs |>
+  group_by(year,
+           observed_in,
+           Nativeness) |>
+  summarise(missing = 
+              sum(is.na(Nativeness))) |>
+  ggplot(mapping = aes(x = year,
+                       y = missing,
+                       colour = observed_in,
+                       shape = observed_in)) +
+  geom_point(alpha = 0.7) +
+  labs(title = "Frequency of Missing Nativeness Values in NP Data",
+       x = "Year",
+       y = "Number of Missing Values",
+       colour = "Park Data") +
+  scale_color_viridis_d()
 ```
